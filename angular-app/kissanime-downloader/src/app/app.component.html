@@ -1,0 +1,23 @@
+<div style="text-align:center">
+    <h1>
+        Welcome to Kissanime Downloader!
+    </h1>
+</div>
+<h2>Enter the details and press submit. </h2>
+<div>
+    Enter the anime url
+    <input type="text" #url>
+</div>
+<div>
+    Enter starting episode
+    <input type="text" #start>
+</div>
+<div>
+    Enter the ending episode
+    <input type="text" #end>
+</div>
+<div>
+    <input type="button" (click)="onSubmit(url, start, end)" value="Submit">
+</div>
+
+<router-outlet></router-outlet>
